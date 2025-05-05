@@ -31,12 +31,15 @@ const router = express.Router();
  *             type: object
  *             required: [message, author]
  *             properties:
- *               message:
- *                 type: string
- *                 example: "This is a new blog post"
- *               author:
- *                 type: string
- *                 example: "John Doe"
+ *               formData:
+ *                 type: object
+ *                 properties:
+ *                   message:
+ *                     type: string
+ *                     example: "This is a new blog post"
+ *                   author:
+ *                     type: string
+ *                     example: "John Doe"
  *     responses:
  *       200:
  *         description: Post created successfully

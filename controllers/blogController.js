@@ -29,7 +29,7 @@ const singlePost = asyncHandler(async (req, res) => {
 
 const createPost = asyncHandler(async (req, res) => {
 	try {
-				const { author, message } = req.body;
+				const { author, message } = req.body.formData;
 				const newPost = await new Blog({
 					message, 
 					author
