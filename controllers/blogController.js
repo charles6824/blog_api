@@ -53,7 +53,7 @@ const createPost = asyncHandler(async (req, res) => {
 const updatePost = asyncHandler(async (req, res) => {
 	try {
     const {formData} = req.body
-    const post = await Blog.findById(req.params.postID)
+    const post = await Blog.findById(formData.postID)
     if(post){
       const updatePost = await Blog.findByIdAndUpdate(post._id, {
         message: formData.message ? formData.message : post.message,

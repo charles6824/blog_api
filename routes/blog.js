@@ -122,13 +122,6 @@ router.get("/:postID", singlePost);
  *   put:
  *     summary: Update a blog post
  *     tags: [Blog]
- *     parameters:
- *       - in: path
- *         name: postID
- *         required: true
- *         schema:
- *           type: string
- *         description: ID of the blog post
  *     requestBody:
  *       required: true
  *       content:
@@ -139,6 +132,9 @@ router.get("/:postID", singlePost);
  *               formData:
  *                 type: object
  *                 properties:
+ *                   postID:
+ *                     type: string
+ *                     example: "345664-546665-36354534343-366354"
  *                   message:
  *                     type: string
  *                     example: "Updated blog message"
