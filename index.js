@@ -27,7 +27,7 @@ const swaggerOptions = {
 				url:
 					process.env.NODE_ENV === "Development"
 						? `http://localhost:${process.env.PORT}`
-						: "https://teneo-backend-new.vercel.app",
+						: "https://blog-api-liart.vercel.app",
 			},
 		],
 		components: {
