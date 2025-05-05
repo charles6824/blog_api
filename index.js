@@ -18,9 +18,9 @@ const swaggerOptions = {
 	swaggerDefinition: {
 		openapi: "3.0.0",
 		info: {
-			title: "Teneo API Docs",
+			title: "Choice and Lifestyle House API Docs",
 			version: "1.0.0",
-			description: "API for Teneo",
+			description: "Blog API for Choice and Lifestyle House",
 		},
 		servers: [
 			{
